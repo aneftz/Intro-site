@@ -1,5 +1,5 @@
 VANTA.GLOBE({
-    el: "#your-element-selector",
+    el: ".vanta-canvas",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
@@ -8,3 +8,7 @@ VANTA.GLOBE({
     scale: 1.00,
     scaleMobile: 1.00
   })
+
+ 
+  document.querySelector('.vanta-canvas').style.width = '100%';
+   document.querySelector('.vanta-canvas').style.minHeight = 'calc(84vh - 100px)';
