@@ -1,0 +1,22 @@
+@mixin color($color: #ff3f81) {
+    background-color: $color;
+    border: $color;
+}
+
+.btn-secondary {
+    @include color;
+}
+
+.btn-secondary:hover {
+    @include color($color: #d63384);
+}
+
+body,
+html {
+    margin: 0;
+   // background: -webkit-radial-gradient(center, ellipse cover, #111 10%, #333 90%);
+}
+
+canvas {
+    display: block;
+}
